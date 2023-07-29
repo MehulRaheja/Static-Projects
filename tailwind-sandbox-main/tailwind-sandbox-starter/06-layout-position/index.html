@@ -5,32 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
+    <title>Layout Position</title>
   </head>
   <body>
     <!-- Positioning -->
+    <div class="relative h-12 w-1/2 bg-red-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>This is absolute child</p>
+      </div>
+    </div>
 
     <!-- Top left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute top-0 left-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Top right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute top-0 right-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Bottom left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute bottom-0 left-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute bottom-0 right-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span top edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute top-0 inset-x-0 h-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span left edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 inset-y-0 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span right edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 inset-y-0 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span bottom edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute bottom-0 inset-x-0 h-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Display Classes -->
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum error excepturi vitae. 
+      Tenetur <span class="inline font-bold">This is inline</span> cupiditate natus esse dolor, nemo officia, eos cum eum maiores dolorem, 
+      minima inventore voluptas atque non iusto amet! <span class="inline-block font-bold">This is inline block</span> Magni deleniti corrupti quibusdam ipsum 
+      consectetur atque error eius assumenda, <span class="block font-bold">This is block.</span> soluta iste autem delectus sapiente voluptatum 
+      accusantium ut <span class="hidden font-bold"> This is hidden.</span> perspiciatis temporibus repudiandae culpa, suscipit animi dicta? 
+      Aspernatur, fugit quaerat.
+    </div>
 
     <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute w-24 h-24 bg-blue-500 z-40">1</div>
+      <div class="absolute w-24 h-24 bg-blue-500">2</div>
+      <div class="absolute w-24 h-24 bg-blue-500 z-0">3</div>
+      <div class="absolute w-24 h-24 bg-blue-500 z-0">4</div>
+      <div class="absolute w-24 h-24 bg-blue-500 z-0">5</div>
+    </div>
 
     <!-- Floats -->
+    <div class="w-1/2">
+      <img class="w-48 h-48 float-left m-4" src="../assets/img/img1.jpg" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et pariatur sapiente eligendi commodi 
+        mollitia dolores maxime nisi ipsum autem praesentium a, adipisci, laborum ex, saepe blanditiis 
+        molestiae eaque quia incidunt?
+      </p>
+    </div>
   </body>
 </html>
 
